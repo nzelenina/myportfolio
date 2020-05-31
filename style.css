@@ -3,10 +3,16 @@ body  {
 	padding: 0;
 	text-align: center;
     width: 1360px;
+    font-family: montserrat, arial ,sans-serif;
 }
 a {
-	
+	display: inline-block;
 	text-decoration: none;
+}
+a:hover {
+	background-color: #25BEB5;
+	cursor: pointer;
+
 }
 li {
 	list-style: none;
@@ -21,34 +27,39 @@ header ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-top: 30px;
 	margin-left: 120px;
 	margin-right: 120px;
 	padding-left: 0;
 }
+header a {
+	cursor: pointer;
+}
 h1 {
-	margin-top: 150px;
+	margin-top: 120px;
+	font-size: 50px;
 }
 .meeting {
 	min-height: 150px;
 	background-color: grey;
-
+}
+.meeting h2 {
+	margin-top: 0;
 }
 .meeting-list {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	
 }
-.meeting-list a {
-	display: inline-block;
-	width: 80px;
+/*.meeting-list p {
+	width: 100px;
 	height: 20px;
-	/*border: 1px solid #000000;*/
 	background-color: white;
-	
+}*/
+.meeting-list button {
+	border-radius: 20px;
 	
 }
-
 .meeting-list li {
 	display: flex;
 }
@@ -60,6 +71,8 @@ h1 {
 .reasons ul {
 	display: flex;
 	flex-direction: row;
+	margin-right: 120px;
+	margin-left: 120px;
 	justify-content: space-between;
 	padding-left: 0;
 }
@@ -83,9 +96,10 @@ h1 {
 	background-color: orange;
 }
 .scills li {
-	list-style-type: circle;
+	list-style-type: disc;
 }
 .scills ul {
+	margin-left: 80px;
 	text-align: left;
 }
        /*работы*/
@@ -97,15 +111,30 @@ h1 {
                    /*footer*/
 
  footer {
- 	display: flex;
+ 	
+ display: flex;
  	flex-direction: row;
+ 	justify-content: space-between;
  	background-color: #594444;
- }  
+ } 
+ footer h3 {
+ 	margin-top: 5px;
+ } 
  .footer-item1 {
- 	width: 50%;
+ 	display: flex;
+ 	flex-direction: column;
+ 	padding-left: 500px;
+ 	width: 650px;
+ }
+ .footer-item1 li {
+ 	width: 220px;
+ }
+ .footer-item1 a {
+ 	color: #000000;
  }
  .footer-item2 {
  	display: flex;
- 	flex-direction: row;
- 	width: 50%;
+ 	flex-direction: column;
+ 	padding-right: 500px;
+ 	width: 650px;
  }                
